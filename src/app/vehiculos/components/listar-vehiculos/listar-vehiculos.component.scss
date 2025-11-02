@@ -1,0 +1,20 @@
+.img-center {
+  display: flex;
+  justify-content: center; // centra horizontalmente
+  align-items: center; // centra verticalmente (si hay altura definida)
+  margin: 0.5rem; // margen de 2 (Bootstrap usa 0.25rem * 2)
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+table {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: 20px;
+  color: gray;
+}
