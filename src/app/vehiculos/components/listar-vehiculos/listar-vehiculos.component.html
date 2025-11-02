@@ -7,13 +7,15 @@
   <table class="table table-striped text-center align-middle">
     <thead class="table-dark">
       <tr>
+        <th>#</th>
         <th>Marca</th>
         <th>Línea</th>
         <th>Modelo</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let vehiculo of vehiculos">
+      <tr *ngFor="let vehiculo of vehiculos; let i = index">
+        <td class="fw-bold">{{ i + 1 }}</td>
         <td>{{ vehiculo.marca }}</td>
         <td>{{ vehiculo.linea }}</td>
         <td>{{ vehiculo.modelo }}</td>
