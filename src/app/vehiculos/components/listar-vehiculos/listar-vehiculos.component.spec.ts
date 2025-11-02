@@ -9,13 +9,13 @@ describe('ListarVehiculosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ListarVehiculosComponent],
-      imports: [HttpClientTestingModule]
+      imports: [ListarVehiculosComponent, HttpClientTestingModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ListarVehiculosComponent);
     component = fixture.componentInstance;
 
+    // Simulamos datos
     component.vehiculos = [
       new Vehiculo(1, 'Renault', 'Kangoo', 2017, 10000, 'plata', '', 'New LS'),
       new Vehiculo(2, 'Chevrolet', 'Spark', 2018, 12000, 'rojo', '', 'LT'),

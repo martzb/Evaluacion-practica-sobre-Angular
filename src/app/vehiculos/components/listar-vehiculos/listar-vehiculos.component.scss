@@ -1,8 +1,8 @@
 .img-center {
   display: flex;
-  justify-content: center; // centra horizontalmente
-  align-items: center; // centra verticalmente (si hay altura definida)
-  margin: 0.5rem; // margen de 2 (Bootstrap usa 0.25rem * 2)
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
 
   img {
     max-width: 100%;
